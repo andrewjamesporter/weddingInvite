@@ -1,42 +1,72 @@
 
 * {
     box-sizing: border-box;
+    border-radius: 10px;
+  /* color: rgb(255, 254, 195); */
+
 }
+
+body {
+  display: block;
+  margin: 0px;
+}
+
+.bigwrapper {
+  background: rgb(5, 19, 68);
+  margin: 0 px;
+  
+}
+
 .wrapper {
     max-width: 800px;
-    background: yellow;
-    height: 1000px;
+    background: rgb(0, 10, 44);
+    height: 800px;
     margin: 0 auto;
 }
 .leftCol {
     float: left;
     width: 50%;
-    height: 1000px;
-    border: 1px solid black;
+    height: 800px;
+  /*  border: 1px solid black; */
+    color: bisque;
+    padding: 16px;
 }
 .rightCol {
     float: left;
     width: 50%;
-    height: 1000px;
-    border: 1px solid black;
+    height: 800px;
+   /* border: 1px solid black; */
 }
 .clear {
     clear: both;
 }
 #wedBG {
+    align-self: center;
     height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./style1.jpg");
+    
 }
 
+
+.wedBG {
+  align-content: center;
+  background-image: url("./style1.jpg");
+  
+  border-radius: 10px;
+}
+
+
 .nav {
-  background-color: brown;
-  text-decoration-line: underline;
+  
+ 
   border-radius: 10px;
   text-align: center;
   font-family: monospace;
   font-size: large;
-  background-image: linear-gradient(brown,green,orange);
+  
 }
 
 .info {
@@ -46,19 +76,71 @@
     }
 
 
-.wedBG {
-    align-content: center;
-    background-image: url("./style1.jpg");
-}
+
 
 
 .text {
-
-    height: 10em;
-    align-items: center;
-    position: absolute;
+    padding: 225px 0;
+  
+    text-align: center;
+ /*    position: absolute; */
     font-size: x-large;
+    font-family: Alex Brush, Helvetica;
+    line-height: 35%;
 }
 
 
 
+h1 {
+  transform: rotate(-75deg);
+  position: relative;
+    left: -290px;
+    bottom: -267px;
+}
+
+
+#style1 {
+  background-image: url('style1.jpg');
+  background-repeat: no-repeat;
+  width: 93px;
+  height: 118px;
+  background-size: 91px auto;
+  transition: transform .2s;
+}
+
+#style1:hover{
+
+  transform: scale(1.25);
+  }
+
+#style2 {
+  background-image: url('style2.jpg');
+  background-repeat: no-repeat;
+  width: 93px;
+  height: 118px;
+  background-size: 91px auto;
+  transition: transform .2s;
+}
+
+#style2:hover{
+
+  transform: scale(1.25);
+  }
+
+#style3 {
+  background-image: url('style3.jpg');
+  background-repeat: no-repeat;
+  width: 93px;
+  height: 118px;
+  background-size: 91px auto;
+  transition: transform .2s;
+}
+
+#style3:hover{
+
+  transform: scale(1.25);
+  }
+
+
+
+ 

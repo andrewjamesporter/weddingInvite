@@ -1,90 +1,93 @@
 
 <!DOCTYPE html>
 <head>
-    <title>Wedding Test</title>
+    <title>Wedding Invitation Designer</title>
 
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    
+
+
     <script type="text/javascript" src="script.js"></script>
     
 </head>
 
-
+<!--dependent-jellyfish.surge.sh-->
 
 <body>
+<div class="bigwrapper">
 
-
-<div class="wrapper">
+  <div class="wrapper">
 
     <div class="leftCol">
-        <div class="header">
-            <h1>Wedding Invitation Designer</h1>
-         <div class="nav">
-            <span onclick="changeBg('style1'); changeFt('fStyle1') "">Style 1</span> &nbsp;&nbsp;
-            <span onclick="changeBg('style2')">Style 2</span> &nbsp;&nbsp;
-            <span onclick="changeBg('style3')">Style 3</span>
-         </div>
+          <div class="header">
+              <h1 onClick="invert()">Wedding Invitation Designer</h1>
+              
+          <div class="nav">
+              <button onclick="changeBg('style1')" id="style1">Style 1</button> 
+              <button onclick="changeBg('style2')" id="style2">Style 2</button>
+              <button onclick="changeBg('style3')" id="style3">Style 3</button>
+          <br><br><br>
+          
+              
+              <span>font style </span><select onchange="changeFt(this);" size="1">
+                <option>Alex Brush</option>
+                <option>Brush Script MT</option>
+                <option>Tangerine</option>
+                <option>Parisienne</option>
+              </select>
+              <br>
 
-    <div class="info">     
-    <br><br>
-                  
-        <br><br><br>
-        <label>Your Name:</label><br>
-        <span></span><input type="text" placeholder="your name" id="name1" onkeyup="getNameA()">
-        <br>
-        <br>
-        <label>Partner's Name</label><br>
-        <input type="text" placeholder="partner's name" id="name2" onkeyup="getNameB()">
-        <br>
-        <br>
-       
-    
-        <label>Date:</label><br>
-        <input type="date" id="date" onchange="getDate()">
-        <br>
-        <br>
-        <label>Venue:</label><br>
-        <input type="text" placeholder="wedding location" id="venue" onkeyup="getVenue()">
- 
+              <span>font colour </span><select onchange="changeCr(this);" size="1">
+                <option>Black</option>
+                <option>Teal</option>
+                <option>MidnightBlue</option>
+                <option>IndianRed</option>
+                <option>DarkSlateGrey</option>
+                <option>CornflowerBlue</option>
+                <option>DarkGoldenRod</option>
+              </select>
+              <hr>
+        </div>
 
-
-     
-    </div>
-    </div>
-    </div>
-
-    <div class="rightCol">
-
-      <div id="wedBG" src="./style1.jpg" >
-
-
-        <div class="initials">
-        
-        <div class="text">
-            <p></p>
-            <span id="input"></span> and <span id="input1"></span>
-            <p>Are getting Married!</p>
-            <p>You are invited to join them on the</p>
-            <p> </p>
-            <span id="input2"></span>
-            <p> @ </p>
-            <span id="input3"></span>
-            
-            <p></p>
+      <div class="info">     
+          <br>
+          <label>Your Name:</label><br>
+          <span></span><input type="text" placeholder="your name" id="name1" onkeyup="getNameA()">
+          <br>
+          <label>Partner's Name:</label><br>
+          <input type="text" placeholder="partner's name" id="name2" onkeyup="getNameB()">
+          <br>
+          <label>Date:</label><br>
+          <input type="text" placeholder="??/??/????" id="date" onkeyup="getDate()">
+          <br>
+          <label>Venue:</label><br>
+          <input type="text" placeholder="wedding location" id="venue" onkeyup="getVenue()">
         </div>
       </div>
     </div>
+      <div class="rightCol">
 
-      
-    </div>
-
-    <div class="clear"></div>
-
-  </div>
-
-
+        <div id="wedBG">
+          <div class="text" id="text"> 
+              <h2><span id="input"></h2></span> and <h2><span id="input1"></span></h1>
+              <p>Are getting Married!</p><br>
+              <p>You are invited to join them on the</p>
+              <span id="input2"></span>
+              <p> at </p>
+              <span id="input3"></span>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="clear"></div>
+   </div>
+</div>
 </body>
